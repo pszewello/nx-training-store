@@ -38,7 +38,7 @@
     "@nrwl/eslint-plugin-nx": "14.7.13",
     "@nrwl/jest": "14.7.13",
     "@nrwl/linter": "14.7.13",
-    "@nrwl/nx-workshop": "^0.0.1",
+    "@nrwl/nx-workshop": "0.2.30",
     "@nrwl/workspace": "14.7.13",
     "@types/jest": "28.1.1",
     "@types/node": "16.11.7",
