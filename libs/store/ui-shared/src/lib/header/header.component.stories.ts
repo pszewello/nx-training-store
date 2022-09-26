@@ -1,3 +1,4 @@
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { HeaderComponent } from './header.component';
 
