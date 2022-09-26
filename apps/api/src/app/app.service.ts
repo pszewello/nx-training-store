@@ -30,6 +30,6 @@ const games = [
 
 @Injectable()
 export class AppService {
-  getGames = () => games;
+  getAllGames = () => games;
   getGame = (id: string) => games.find((game) => game.id === id);
 }
