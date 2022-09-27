@@ -87,6 +87,20 @@
         "jestConfig": "apps/store/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "Deploy": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "npx surge dist/apps/store ${SURGE_DOMAIN_STORE} --token ${SURGE_TOKEN}"
+      }
+    },
+    "windows-deploy": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "npx surge dist/apps/store %SURGE_DOMAIN_STORE% --token %SURGE_TOKEN%"
+      }
     }
   },
   "tags": ["scope:store", "type:app"]
