@@ -1,4 +1,4 @@
 export interface UtilGeneratorSchema {
 	name: string,
-	directory: 'store' | 'api' | 'shared';
+	directory: 'store' | 'api' | 'SHARED';
 }
