@@ -64,5 +64,8 @@
       "style": "scss"
     }
   },
-  "defaultProject": "store"
+  "defaultProject": "store",
+  "implicitDependencies": {
+    ".github/workflows/ci.yml": "*"
+  }
 }
