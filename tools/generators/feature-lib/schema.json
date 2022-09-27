@@ -11,7 +11,28 @@
         "$source": "argv",
         "index": 0
       }
+    },
+    "directory": {
+      "type": "string",
+      "description": "Provide the directory type",
+      "x-prompt": {
+        "message": "Which type of directory would you like to generate?",
+        "type": "list",
+        "items": [{
+            "value": "store",
+            "label": "Store"
+          },
+          {
+            "value": "api",
+            "label": "API"
+          },
+          {
+            "value": "shared",
+            "label": "Shared"
+          }
+        ]
+      }
     }
   },
-  "required": ["name"]
+  "required": ["name", "directory"]
 }

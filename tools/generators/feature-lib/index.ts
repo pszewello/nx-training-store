@@ -7,7 +7,6 @@ export default async function (tree: Tree, schema: UtilGeneratorSchema) {
     name: `feature-${schema.name}`,
     directory: schema.directory,
     tags: `type:feature, scope:${schema.directory}`
-
   });
   await formatFiles(tree);
   return () => {
