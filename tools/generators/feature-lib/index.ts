@@ -4,9 +4,9 @@ import { UtilGeneratorSchema } from '../interfaces/generator-interface';
 
 export default async function (tree: Tree, schema: UtilGeneratorSchema) {
   await libraryGenerator(tree, {
-    name: `util-${schema.name}`,
+    name: `feature-${schema.name}`,
     directory: schema.directory,
-    tags: `type:util, scope:${schema.directory}`
+    tags: `type:feature, scope:${schema.directory}`
 
   });
   await formatFiles(tree);
