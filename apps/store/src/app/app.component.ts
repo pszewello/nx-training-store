@@ -10,7 +10,9 @@ import { Game } from '@bg-hoard/util-interface';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    console.log("component constructed")
+  }
 
 
   formatRating = formatRating;
